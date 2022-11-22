@@ -6,8 +6,8 @@ Console.WriteLine ("Напишите число B ");
 int numberB = Convert.ToInt32(Console.ReadLine ());
 Console.WriteLine ("Напишите число C ");
 int numberC = Convert.ToInt32(Console.ReadLine ());
-int max = numberA;
-if ((numberB < numberC) && (max < numberC ))
-{
-    max = numberC;
-}
+if ((numberB < numberC) && (numberA < numberC)) Console.WriteLine(numberC);
+
+if ((numberB < numberA) && (numberC < numberA)) Console.WriteLine(numberA);
+
+if ((numberA < numberB) && (numberC < numberB)) Console.WriteLine(numberB);
