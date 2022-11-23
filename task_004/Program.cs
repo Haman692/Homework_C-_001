@@ -7,7 +7,6 @@ int numberB = Convert.ToInt32(Console.ReadLine ());
 Console.WriteLine ("Напишите число C ");
 int numberC = Convert.ToInt32(Console.ReadLine ());
 int max = numberA;
-if ((numberB < numberC) && (numberA < numberC)) max = numberC;
-
-if ((numberA < numberB) && (numberC < numberB)) max = numberB;
+if (max < numberC) max = numberC;
+if (max < numberB) max = numberB;
 Console.WriteLine($"Максимальное {max}");

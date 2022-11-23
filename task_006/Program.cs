@@ -2,6 +2,6 @@
 Console.Clear();
 Console.WriteLine("Введите число ");
 int number = Convert.ToInt32(Console.ReadLine());
-int EvenNumber = number % 2;
-if (EvenNumber != 0) Console.WriteLine($"Число {number} нечетное");
+int evenNumber = number % 2;
+if (evenNumber != 0) Console.WriteLine($"Число {number} нечетное");
 else Console.WriteLine($"Число {number} четное");
